@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "src": "/(.*\\.wasm)",
+      "headers": { "Content-Type": "application/wasm" },
+      "dest": "/$1"
+    }
+  ]
+}
