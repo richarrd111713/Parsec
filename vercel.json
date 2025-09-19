@@ -1,9 +1,7 @@
 {
   "routes": [
-    {
-      "src": "/(.*\\.wasm)",
-      "headers": { "Content-Type": "application/wasm" },
-      "dest": "/$1"
-    }
+    { "src": "/(.*\\.wasm)", "headers": { "Content-Type": "application/wasm" }, "dest": "/$1" },
+    { "src": "/(.*\\.json)", "headers": { "Content-Type": "application/json" }, "dest": "/$1" },
+    { "src": "/(.*\\.key)", "headers": { "Content-Type": "application/octet-stream" }, "dest": "/$1" }
   ]
 }
